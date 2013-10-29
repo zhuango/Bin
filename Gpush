@@ -1,0 +1,12 @@
+#!/bin/bash
+
+USER="Og192"
+if [ $# -ne "2" ]; then
+	echo "Usage: $0 <Remote dir> <Local file>"
+	exit 1
+fi
+
+git add $2
+git commit -m 'Initial commit'
+git push origin master
+
