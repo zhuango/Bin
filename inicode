@@ -1,0 +1,21 @@
+#!/bin/sh
+#Program:
+#	init the head of code like #include<*.h> void main(){}
+#Histoty:
+#	Sun Jul 14 22:30:06 CST 2013
+
+if [ $# -lt "1" ]; then
+	echo "Usage: $0 <filename>";
+	exit 0;
+fi
+
+echo "#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+
+	exit(EXIT_SUCCESS);
+}" >> $1
+
+vim $1;

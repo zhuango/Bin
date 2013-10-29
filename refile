@@ -1,0 +1,56 @@
+#!/bin/bash
+#Program:
+#	copy the newist code files to the safe place
+#History:
+#	2012.12/26
+#Author:
+#	Og
+
+#check the args right?
+if [ "$#" != 1 ]; then 
+	echo "Usage: $0 [Opinion]"
+	exit 0
+fi
+
+#the destination you want to copy
+DESTINATION=/media/Og_HD
+#linux code dir
+CODE_DESTINATION=/media/Og_HD/Files/my_code/Pro
+UNIX=/Pro/CPro/UNIX_Pro/*
+CFILE=/Pro/CPro/*
+ALL=/Pro/*
+VIMRC=/etc/vimrc
+VIM_CSCOPE=/usr/share/vim/vim72/cscope.sh
+
+case $1 in
+	"U")
+#APUE code dir
+		cp -r ${HOME}$UNIX $CODE_DESTINATION/CPro/UNIX_Pro/
+		exit 0
+		;;
+	"CPro")
+#C code dir
+		cp -r ${HOME}$CFILE $CODE_DESTINATION/CPro/
+		exit 0
+		;;
+	"A")
+#linux code
+		cp -r ${HOME}$ALL $CODE_DESTINATION/
+		exit 0
+		;;
+	"Og")
+#home dir
+		cp -r ${HOME}/* $DESTINATION/Og/
+		exit 0
+		;;
+	"vim")
+#vimrc conf
+		cp $VIMRC $DESTINATION/System_save/
+#cscope file
+		cp $VIM_CSCOPE $DESTINATION/System_save/
+		;;
+	*)
+		echo "Error: We have no this opinion"
+		exit 0
+		;;
+esac

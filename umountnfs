@@ -1,0 +1,9 @@
+#!/bin/sh
+# Author: Og
+# Date: 2013/06/08
+# Use; umount nfs
+if [ $# == 1 ]; then
+	sudo umount $1:/home/
+else
+	echo "Usgae $0 <IP>"
+fi

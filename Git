@@ -1,0 +1,12 @@
+#!/bin/bash
+
+USER="Og192"
+if [ "$#" -ne "2" ]; then
+	echo "Usage: $0 <Remote dir> <commit>";
+	exit 1
+fi
+git init
+git add .
+git commit -m $2
+git remote add origin https://github.com/$USER/$1.git
+git push origin master

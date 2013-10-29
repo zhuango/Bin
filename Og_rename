@@ -1,0 +1,27 @@
+#!/bin/bash
+#Program:
+#	Copy the files name .pl to filename only
+#History:
+#	2013.1.1
+#Author:
+#	Og
+#NAMES is for files named .pl
+DIR="./"
+if [ $# == 0 ];then 
+	echo "Usage: $0 Dir filetype";
+	exit 1;
+fi
+if [ $# == 1 ]; then
+	TYPE=$1;
+	DIR="./";
+	NAMES=`ls | grep "$TYPE" | sed "s/$TYPE//g"`;
+fi
+if [ $# == 2 ]; then
+	TYPE=$2;
+	DIR=$1;
+	NAMES=`ls $1 | grep "$TYPE" | sed "s/$TYPE//g"`;
+fi
+for name in $NAMES
+do
+	mv $DIR/$name$TYPE $DIR/$name;
+done	
