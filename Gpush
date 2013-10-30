@@ -1,6 +1,4 @@
 #!/bin/bash
-
-USER="Og192"
 if [ $# -ne "1" ]; then
 	echo "Usage: $0 <Local file>"
 	exit 1

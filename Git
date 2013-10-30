@@ -1,12 +1,12 @@
 #!/bin/bash
 
-USER="Og192"
+user="Og192"
 if [ "$#" -ne "1" ]; then
-	echo "Usage: $0 <Remote dir> <commit>";
+	echo "Usage: $0 <Remote dir>";
 	exit 1
 fi
 git init
 git add .
 git commit -m 'Initial commit'
-git remote add origin https://github.com/$USER/$1.git
+git remote add origin https://github.com/$user/$1.git
 git push origin master
