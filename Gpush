@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -ne "1" ]; then
-	echo "Usage: $0 <Local file>"
+	echo "Usage: $0 <Local dir>"
 	exit 1
 fi
 
