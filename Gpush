@@ -7,6 +7,4 @@ fi
 git add $1
 git commit -m 'Initial commit'
 git push origin master
-git commit -m 'first commit'
-git push origin master
 
