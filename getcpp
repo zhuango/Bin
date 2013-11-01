@@ -1,0 +1,11 @@
+#!/bin/sh
+DIR=~/Pro/C++/Early_C++_Src
+DIS=~/Pro/C++/Early_C++_Code
+for Projects in `ls ${DIR}/`
+do
+	mkdir ${DIS}/${Projects}/
+	cp ${DIR}/${Projects}/${Projects}/*.cpp ${DIS}/${Projects}/
+	cp ${DIR}/${Projects}/${Projects}/*.h ${DIS}/${Projects}/
+	cp ${DIR}/${Projects}/${Projects}/*.c ${DIS}/${Projects}/
+	cp ${DIR}/${Projects}/${Projects}/*.H ${DIS}/${Projects}/
+done	

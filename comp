@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "UVA SGU ZJU PKU OJ USACO IOI"
+
+echo "
+Algorithms types: 
+
+    Dynamic Programming(动态规划)
+    Greedy(贪心)
+    Complete Search(枚举)
+    Flood Fill(图论的一种算法：泛滥填充)
+    Shortest Path(最短路径)
+    Recursive Search Techniques(回溯搜索技术)
+    Minimum Spanning Tree(最小生成树)
+    Knapsack(背包问题)
+    Computational Geometry(计算几何)
+    Network Flow(网络流图)
+    Eulerian Path(欧拉回路)
+    Two-Dimensional Convex Hull(凸包问题)
+    BigNums(大数问题)
+    Heuristic Search(启发式搜索)
+    Approximate Search(近似搜索)
+    Ad Hoc Problems(个性化问题(模拟))
+"

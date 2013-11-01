@@ -1,0 +1,9 @@
+#!/bin/sh
+
+for src in `find /home/Og/Pro/ | grep "\.c$"`
+do
+	`chown Og ${src} `;
+	`chgrp Og ${src} `;
+	`chmod 0644 ${src}` ;
+	echo "${src} chmod OK!";
+done

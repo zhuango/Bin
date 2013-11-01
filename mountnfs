@@ -1,0 +1,9 @@
+#!/bin/sh
+# Author: Og
+# Date: 2013/06/08
+# Use: mount nfs
+if [ $# == 1 ]; then
+	sudo mount -t nfs -o nolock $1:/home/ /home/Og/NFS/
+else
+	echo "Usage: $0 <IP>"
+fi

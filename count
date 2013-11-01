@@ -1,0 +1,41 @@
+#!/bin/bash
+
+count=0
+
+#C code
+home=$HOME/Pro/CPro/
+for item in `find $home | grep -v "$home\." | grep "\.[ch]$"`
+do
+#	echo $item
+	while read line;
+	do
+		count=$[count + 1]
+	done < $item
+done
+
+
+#C++ code
+home=$HOME/Pro/C++/
+
+for item in `find $home | grep -v "$home\." | grep "\.[ch]"`
+do
+#	echo $item
+	while read line;
+	do
+		count=$[count + 1]
+	done < $item
+done
+
+#Java cpde
+home=$HOME/Pro/Java/
+for item in `find $home | grep -v "$home\." | grep "\.java$"`
+do
+#	echo $item
+	while read line;
+	do
+		count=$[count + 1]
+	done < $item
+done
+
+echo Total : $count lines.
+
