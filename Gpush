@@ -1,10 +1,11 @@
 #!/bin/bash
+date=`date`
+echo $date
 if [ $# -ne "1" ]; then
 	echo "Usage: $0 <Local dir>"
 	exit 1
 fi
-
 git add $1
-git commit -m 'Initial commit'
+git commit -m "${date}"
 git push origin master
 
