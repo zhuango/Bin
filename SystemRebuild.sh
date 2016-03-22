@@ -20,3 +20,4 @@ sudo apt-get install sudo apt-get install openjdk-7-jdk
 #right click to open terminal in a specified folder.
 sudo apt-get install nautilus-open-terminal
 
+sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
