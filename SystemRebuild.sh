@@ -20,6 +20,6 @@ sudo apt-get install sudo apt-get install openjdk-7-jdk
 #right click to open terminal in a specified folder.
 sudo apt-get install nautilus-open-terminal
 
-sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose g++ libopenblas-dev git
+sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose python-matplotlib g++ libopenblas-dev git
 #install octave for learning machine learning
 sudo apt-get install octave
