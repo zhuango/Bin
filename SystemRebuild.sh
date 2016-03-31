@@ -25,3 +25,5 @@ sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose
 sudo apt-get install octave
 
 sudo apt-get install sunpinyin-data 
+#for matplotlib
+sudo apt-get install libpng-dev libfreetype6-dev 
