@@ -21,6 +21,7 @@ sudo apt-get install sudo apt-get install openjdk-7-jdk
 sudo apt-get install nautilus-open-terminal
 
 sudo apt-get install python-numpy python-scipy python-dev python-pip python-nose python-matplotlib g++ libopenblas-dev git
+sudo apt-get install python3-numpy python3-scipy python3-dev python3-pip python3-nose python3-matplotlib
 #install octave for learning machine learning
 sudo apt-get install octave
 
