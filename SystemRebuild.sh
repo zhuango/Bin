@@ -29,3 +29,4 @@ sudo apt-get install sunpinyin-data
 #for matplotlib
 sudo apt-get install libpng-dev libfreetype6-dev
 sudo apt-get install ssh
+sudo apt install adobe-flashplugin
